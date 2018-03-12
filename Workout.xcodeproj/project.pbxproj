@@ -12,11 +12,17 @@
 		F7BB00DF205452380002A7A4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BB00DE205452380002A7A4 /* RealmSwift.framework */; };
 		F7BB00E0205452380002A7A4 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7BB00DE205452380002A7A4 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7DE6EC22050304B0036192C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE6EC12050304B0036192C /* AppDelegate.swift */; };
-		F7DE6EC42050304B0036192C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE6EC32050304B0036192C /* ViewController.swift */; };
+		F7DE6EC42050304B0036192C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE6EC32050304B0036192C /* TodayViewController.swift */; };
 		F7DE6EC72050304B0036192C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DE6EC52050304B0036192C /* Main.storyboard */; };
 		F7DE6EC92050304B0036192C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DE6EC82050304B0036192C /* Assets.xcassets */; };
 		F7DE6ECC2050304B0036192C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DE6ECA2050304B0036192C /* LaunchScreen.storyboard */; };
 		F7DE6ED72050304B0036192C /* WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE6ED62050304B0036192C /* WorkoutTests.swift */; };
+		F7F513392056B71900C2A463 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F513382056B71900C2A463 /* Exercise.swift */; };
+		F7F5133B2056BA9A00C2A463 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5133A2056BA9A00C2A463 /* Workout.swift */; };
+		F7F513452056C43E00C2A463 /* PredictiveWorkoutThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F513442056C43E00C2A463 /* PredictiveWorkoutThumbnailView.swift */; };
+		F7F513472056C46400C2A463 /* WorkoutThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F513462056C46400C2A463 /* WorkoutThumbnailView.swift */; };
+		F7F513492056FD7100C2A463 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F513482056FD7100C2A463 /* Style.swift */; };
+		F7F5134C2056FDD800C2A463 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5134B2056FDD800C2A463 /* Movement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +55,7 @@
 		F7BB00DE205452380002A7A4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../realm-swift-3.1.1/ios/swift-4.0.2/RealmSwift.framework"; sourceTree = "<group>"; };
 		F7DE6EBE2050304B0036192C /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DE6EC12050304B0036192C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7DE6EC32050304B0036192C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7DE6EC32050304B0036192C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		F7DE6EC62050304B0036192C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DE6EC82050304B0036192C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DE6ECB2050304B0036192C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +63,12 @@
 		F7DE6ED22050304B0036192C /* WorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DE6ED62050304B0036192C /* WorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTests.swift; sourceTree = "<group>"; };
 		F7DE6ED82050304B0036192C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F513382056B71900C2A463 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		F7F5133A2056BA9A00C2A463 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		F7F513442056C43E00C2A463 /* PredictiveWorkoutThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictiveWorkoutThumbnailView.swift; sourceTree = "<group>"; };
+		F7F513462056C46400C2A463 /* WorkoutThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutThumbnailView.swift; sourceTree = "<group>"; };
+		F7F513482056FD7100C2A463 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		F7F5134B2056FDD800C2A463 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +114,10 @@
 		F7DE6EC02050304B0036192C /* Workout */ = {
 			isa = PBXGroup;
 			children = (
-				F7DE6EC12050304B0036192C /* AppDelegate.swift */,
-				F7DE6EC32050304B0036192C /* ViewController.swift */,
+				F7F513372056B6FD00C2A463 /* Model */,
+				F7F5133D2056BF6400C2A463 /* View */,
+				F7F5133F2056BF7100C2A463 /* Controller */,
+				F7F5133C2056BF5700C2A463 /* Singleton */,
 				F7DE6EC52050304B0036192C /* Main.storyboard */,
 				F7DE6EC82050304B0036192C /* Assets.xcassets */,
 				F7DE6ECA2050304B0036192C /* LaunchScreen.storyboard */,
@@ -119,6 +133,58 @@
 				F7DE6ED82050304B0036192C /* Info.plist */,
 			);
 			path = WorkoutTests;
+			sourceTree = "<group>";
+		};
+		F7F513372056B6FD00C2A463 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7F5134D2057171B00C2A463 /* Workout */,
+				F7F5134A2056FD7700C2A463 /* Exercise */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7F5133C2056BF5700C2A463 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE6EC12050304B0036192C /* AppDelegate.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		F7F5133D2056BF6400C2A463 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7F513442056C43E00C2A463 /* PredictiveWorkoutThumbnailView.swift */,
+				F7F513462056C46400C2A463 /* WorkoutThumbnailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7F5133F2056BF7100C2A463 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE6EC32050304B0036192C /* TodayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7F5134A2056FD7700C2A463 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				F7F513382056B71900C2A463 /* Exercise.swift */,
+				F7F5134B2056FDD800C2A463 /* Movement.swift */,
+				F7F513482056FD7100C2A463 /* Style.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		F7F5134D2057171B00C2A463 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				F7F5133A2056BA9A00C2A463 /* Workout.swift */,
+			);
+			path = Workout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DE6EC42050304B0036192C /* ViewController.swift in Sources */,
+				F7DE6EC42050304B0036192C /* TodayViewController.swift in Sources */,
 				F7DE6EC22050304B0036192C /* AppDelegate.swift in Sources */,
+				F7F513392056B71900C2A463 /* Exercise.swift in Sources */,
+				F7F513472056C46400C2A463 /* WorkoutThumbnailView.swift in Sources */,
+				F7F5134C2056FDD800C2A463 /* Movement.swift in Sources */,
+				F7F513452056C43E00C2A463 /* PredictiveWorkoutThumbnailView.swift in Sources */,
+				F7F513492056FD7100C2A463 /* Style.swift in Sources */,
+				F7F5133B2056BA9A00C2A463 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
