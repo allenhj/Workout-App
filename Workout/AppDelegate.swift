@@ -7,15 +7,34 @@
 //
 
 import UIKit
+import RealmSwift
+
+class Exercise: Object {
+    @objc dynamic var name = ""
+}
+
+class Workout: Object {
+    @objc dynamic var name = ""
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let realm = try! Realm()
+    
+    lazy var exercises: Results<Exercise> = { realm.objects(Exercise.self) }()
+    var selectedExercise: Exercise!
+    lazy var workouts: Results<Workout> = { realm.objects(Workout.self) }()
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        populateDefaultExercises()
+        populateDefaultWorkouts()
+        
         return true
     }
 
@@ -41,6 +60,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func populateDefaultExercises() {
+        
+        if exercises.count == 0 {
+            
+            print("No exercises found; populating...")
+            
+            try! realm.write() {
+                
+                let defaultExercises = ["Dumbbell Curl",
+                                         "Seated Dumbbell Shoulder Press",
+                                         "Seated Overhead Triceps Extension",
+                                         "Dumbbell Lateral Raise",
+                                         "Dumbbell Rear Lateral Raise",
+                                         "Dumbbell Front Raise",
+                                         "Dumbbell Front Raise",
+                                         "Triceps Rope Pushdown",
+                                         "Triceps Pulldown",
+                                         "Cable Overhead Triceps Rope Pulldown",
+                                         "Triceps Pushdown",
+                                         "Dumbbell Rotational Punch",
+                                         "Dumbbell Shrug",
+                                         "Cable Rear Lateral Raise",
+                                         "Inclined Shoulder Raise"
+                ]
+                
+                for exercise in defaultExercises {
+                    let newExercise = Exercise()
+                    newExercise.name = exercise
+                    self.realm.add(newExercise)
+                }
+            }
+            
+            exercises = realm.objects(Exercise.self)
+        }
+        
+        print("Number of exercises: \(exercises.count)")
+    }
+    
+    func populateDefaultWorkouts() {
+        if workouts.count == 0 {
+            print("No workout found; populating...")
+        }
+        print("Number of workouts: \(workouts.count)")
+    }
 
 }
 
